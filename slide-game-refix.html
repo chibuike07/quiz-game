@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz game</title>
+    <link rel="stylesheet" href="slide-game.css" />
+  </head>
+  <body>
+    <header>
+      <div class="motto">
+      <h2>bit your Imagination</h2>
+      </div>
+      <ul id="ul"></ul>
+    </header>
+    <div class="cont">
+      <div class="wel">
+        <h1>welcome to the quiz section</h1>
+        <h2></h2>
+      </div>
+      <div class="display">
+        <button onclick="prev()" class="btnB"><<</button>
+        <div class="holders">
+          <p></p>
+          <i class="ans"></i>
+        </div>
+        <button onclick="nex()" class="btnA">>></button>
+      </div>
+      <div class="progress">
+        <p></p>
+      </div>
+      <div class="btn">
+        <button onclick="correctAns()" id="cor">correct</button>
+        <button onclick="failedAns()" id="fil">failed</button>
+      </div>
+    </div>
+    <script src="quiz -and-ans.js"></script>
+    <script src="slide-game-refix.js"></script>
+  </body>
+</html>
