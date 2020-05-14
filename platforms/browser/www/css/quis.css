@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.quizWrapper {
+  width: 100%;
+  height: 90vh;
+  background-color: cornsilk;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  width: 20;
+  background-color: cornflowerblue;
+  margin-bottom: 5%;
+}
+
+.header .motto {
+  text-transform: capitalize;
+  animation: move 5s infinite;
+  color: #fff;
+}
+@keyframes move {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate3d(180deg);
+  }
+  50% {
+    color: blue;
+  }
+}
+
+.header .prices ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: inherit;
+  list-style: none;
+  color: #fff;
+}
+.prices ul li {
+  padding-right: 3px;
+}
+.listColor:nth-child(1) {
+  color: red;
+}
+.wel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: cornflowerblue;
+}
+.display {
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+}
+.holders {
+  line-height: 2;
+  padding: 2%;
+  font-size: 20pt;
+  color: cornflowerblue;
+}
+
+.display .btnA,
+.btnB {
+  border-radius: 30%;
+  width: 10%;
+  height: 7vh;
+  outline: none;
+  filter: drop-shadow(10px 10px 13px rgb(59, 81, 121));
+}
+.btnA {
+  position: absolute;
+  left: 80%;
+  top: 45%;
+  /* width: 10%; */
+  background-color: cornflowerblue;
+  color: cornsilk;
+  transform: translate(-80%, -45%);
+  position: fixed;
+}
+.btnB {
+  position: absolute;
+  left: 20%;
+  top: 45%;
+  /* width: 10%; */
+  background-color: cornflowerblue;
+  color: cornsilk;
+  transform: translate(-20%, -45%);
+  position: fixed;
+}
+
+.checkAnsWrapper {
+  display: grid;
+  grid-gap: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.checkAnsWrapper input[type="text"] {
+  height: 7vh;
+  width: 25vw;
+  border-radius: 20px;
+  outline: none;
+}
+.checkAnsWrapper button {
+  height: 7vh;
+  width: max-content;
+  outline: none;
+  width: max-content;
+  border-radius: 2px solid gold;
+  background-color: cornflowerblue;
+  color: #fff;
+  filter: drop-shadow(10px 10px 13px rgb(59, 81, 121));
+}
+
+.progress {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress p {
+  width: 100%;
+  background-color: cornflowerblue;
+  height: 10px;
+  padding: 2%;
+  border-radius: 20px;
+  color: cornsilk;
+}
+.btn {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+.btn button {
+  width: 15%;
+  height: 7vh;
+  background-color: cornflowerblue;
+  color: cornsilk;
+  outline: none;
+}
+.list {
+  color: red;
+}

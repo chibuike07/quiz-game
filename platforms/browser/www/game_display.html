@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <link rel="stylesheet" type="text/css" href="css/quis.css" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <div class="quizWrapper">
+      <header class="header">
+        <div class="motto">
+          <h2>bit your Imagination</h2>
+        </div>
+        <div class="prices">
+          <ul id="ul"></ul>
+        </div>
+      </header>
+      <!-- <div class="cont"> -->
+      <div class="wel">
+        <h1>welcome to the quiz section</h1>
+        <!-- <h2></h2> -->
+      </div>
+      <div class="display">
+        <button id="prev" class="btnB"><<</button>
+        <div class="holders">
+          <p></p>
+          <i></i>
+        </div>
+        <button id="nex" class="btnA">>></button>
+        <div class="checkAnsWrapper">
+          <form action="javascript:;">
+            <input type="text" class="ans" placeholder="add your answers..." />
+            <button id="checkAns">check your answer</button>
+          </form>
+        </div>
+      </div>
+      <div class="progress">
+        <p></p>
+      </div>
+      <!-- <div class="btn">
+        <button id="cor">correct</button>
+        <button id="fail">failed</button>
+      </div> -->
+      <!-- </div> -->
+    </div>
+    <!-- <script src="quiz -and-ans.js"></script> -->
+    <!-- <script type="text/javascript" src="js/quiz-and-ans.js"></script> -->
+    <script type="text/javascript" src="./js/quiz-and-ans.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
